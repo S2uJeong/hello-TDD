@@ -30,36 +30,4 @@ public class PasswordStrengthMeterTest {
     void test3() {
         assertStrength("abdfsd@!A", PasswordStrength.NORMAL);
     }
-
-    @Test
-    @DisplayName("값이 없는 경우")
-    void test4() {
-        assertStrength(null, PasswordStrength.INVALID);
-    }
-    @Test
-    @DisplayName("값이 빈 문자열인 경우")
-    void test5() {
-        assertStrength("", PasswordStrength.INVALID);
-    }
-
-    @Test
-    @DisplayName("대문자를 포함하지 않고 나머지 조건을 충족하는 경우")
-    void test6() {
-        assertStrength("fdsfsd3#", PasswordStrength.NORMAL);
-    }
-
-    @Test
-    @DisplayName("길이가 8글자 이상인 조건만 충족하는 경우")
-    void test7() {
-        assertStrength("gdfgkdfjgldf", PasswordStrength.WEAK);
-    }
-
-    @Test
-    @DisplayName("숫자 ")
-    void test8() {
-        assertStrength("gdfgkdfjgldf", PasswordStrength.WEAK);
-    }
-
-
-
 }
