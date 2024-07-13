@@ -1,0 +1,6 @@
+- Class별 기능 명세서 
+  - AutoDebitRegister 
+    - 자동이체 등록 기능
+    - CardNumberValidator를 이용해서 카드번호가 유효한지 검사한 뒤에 그 결과에 따라 자동이체 정보를 저장함 
+  - CardNumberValidator : 외부 API를 이용해서 카드번호가 유효한지 확인 
+  - 
