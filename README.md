@@ -1,5 +1,6 @@
 # 테스트 주도 개발 시작하기 책을 읽으며 코드 연습하는 공간
 - 책 소스 : https://github.com/madvirus/tddb
+- 내용정리한 리포지토리 : https://github.com/S2uJeong/Note/tree/main/resource/testDrivenDevelopment
 - 기본 프로젝트에 Junit5 라이브러리만 설치하여 구동함
 ### 패키지별 코드 내용 
 - test/java/chap02/ 
@@ -13,14 +14,3 @@
     - 2개월 이상 요금을 납부할 수 있다.
     - 10만원을 납부하면 서비스를 1년 제공한다. 
    ```
-### 내용 정리 
-- TDD 순서에 관하여
-  - 시작부터 잘 안될때는 검증하는 코드부터 작성한다. 
-    ```java
-    @Test
-    void test() {
-        assertEquals(기대하는 값, 실제 값);
-    }
-    ```
-    - 그 후 값으로 바꿔나가며 메서드를 정의하고 대입하며 작성해 간다. 
-  - 중간마다 리팩토링을 진행하는데, 리팩토링 범위가 넓어 시간이 많이 소요될 것 같으면 To-do로 남겨 두고 테스트 사이클을 유지하는 것이 좋다. 
