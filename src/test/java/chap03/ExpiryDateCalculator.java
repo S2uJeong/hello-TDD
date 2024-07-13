@@ -5,7 +5,7 @@ import java.time.YearMonth;
 
 public class ExpiryDateCalculator {
     LocalDate calculateExpiryDate(PayData data) {
-        int addedMonths = data.getPayAmount() / 10_000;
+        int addedMonths = data.getPayAmount() >= 100_000 ? (data.getPayAmount() / 100_000) * 12 + (data.getPayAmount() % 100_000) / 10_000 : data.getPayAmount() / 10_000;
         if (data.getFirstBillingDate() != null) {
             return expiryDateUsingFirstBillingDate(data, addedMonths);
         } else {
