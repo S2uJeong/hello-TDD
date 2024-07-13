@@ -9,15 +9,16 @@ public class ExpiryDateCalculator {
 
         if (data.getFirstBillingDate() != null) {
             LocalDate candidateExp = data.getBillingDate().plusMonths(addedMonths);
-            if (data.getFirstBillingDate().getDayOfMonth() != candidateExp.getDayOfMonth()) {
+            final int dayOfFirstBilling = data.getFirstBillingDate().getDayOfMonth();
+            if (dayOfFirstBilling != candidateExp.getDayOfMonth()) {
 
                 final int dayLenOfCandiMon = YearMonth.from(candidateExp).lengthOfMonth(); // 후보 만료일이 속한 월의 마지막 일자
 
 
-                if ( dayLenOfCandiMon < data.getFirstBillingDate().getDayOfMonth()) {
+                if ( dayLenOfCandiMon <dayOfFirstBilling) {
                     return candidateExp.withDayOfMonth(dayLenOfCandiMon);
                 }
-                return candidateExp.withDayOfMonth(data.getFirstBillingDate().getDayOfMonth());
+                return candidateExp.withDayOfMonth(dayOfFirstBilling);
             }
 
         }
