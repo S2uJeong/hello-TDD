@@ -3,7 +3,19 @@
 ## 1. (Book) 테스트 주도 개발 시작하기
 - [책 소스](https://github.com/madvirus/tddb)
 - [본인이 정리한 Note url](https://github.com/S2uJeong/Note/tree/main/resource/testDrivenDevelopment)
-- 기본 프로젝트에 Junit5 라이브러리만 설치하여 구동함
+
+### 1-1. 라이브러리
+- Junit5 라이브러리
+```gradle
+dependencies {
+    testImplementation platform('org.junit:junit-bom:5.9.1')
+    testImplementation 'org.junit.jupiter:junit-jupiter'
+}
+test {
+    useJUnitPlatform()
+}
+```
+
 ### 패키지별 코드 내용 
 - root : test/java/tddBook
 - /chap02
