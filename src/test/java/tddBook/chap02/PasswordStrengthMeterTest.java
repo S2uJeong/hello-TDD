@@ -1,4 +1,4 @@
-package chap02;
+package tddBook.chap02;
 
 import org.junit.jupiter.api.DisplayName;
 import org.junit.jupiter.api.Test;

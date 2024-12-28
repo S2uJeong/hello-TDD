@@ -1,4 +1,4 @@
-package chap05;
+package tddBook.chap05;
 
 import org.junit.jupiter.api.*;
 

@@ -1,4 +1,4 @@
-package chap01;
+package tddBook.chap01;
 
 import org.junit.jupiter.api.Assertions;
 import org.junit.jupiter.api.Test;
