@@ -1,11 +1,26 @@
-# 테스트 주도 개발 시작하기 책을 읽으며 코드 연습하는 공간
-- 책 소스 : https://github.com/madvirus/tddb
-- 내용정리한 리포지토리 : https://github.com/S2uJeong/Note/tree/main/resource/testDrivenDevelopment
-- 기본 프로젝트에 Junit5 라이브러리만 설치하여 구동함
+# 테스트 코드를 연습하는 공간
+
+## 1. (Book) 테스트 주도 개발 시작하기
+- [책 소스](https://github.com/madvirus/tddb)
+- [본인이 정리한 Note url](https://github.com/S2uJeong/Note/tree/main/resource/testDrivenDevelopment)
+
+### 1-1. 라이브러리
+- Junit5 라이브러리
+```gradle
+dependencies {
+    testImplementation platform('org.junit:junit-bom:5.9.1')
+    testImplementation 'org.junit.jupiter:junit-jupiter'
+}
+test {
+    useJUnitPlatform()
+}
+```
+
 ### 패키지별 코드 내용 
-- test/java/chap02/ 
+- root : test/java/tddBook
+- /chap02
   - TDD를 만들어 보며 감을 익혔다.
-- test/java/chap03/
+- /chap03
   - 추천된 테스트 코드 작성 순서에 맞춰 코드를 작성하였다.
   - 요구사항
    ```
@@ -14,5 +29,8 @@
     - 2개월 이상 요금을 납부할 수 있다.
     - 10만원을 납부하면 서비스를 1년 제공한다. 
    ```
-- test/java/chap05/
+- /chap05
   - 테스트 라이프 사이클에 대해 알아본다.
+ 
+## 2. 테스트 코드 강의 
+- [강의 출처](https://www.inflearn.com/course/%EC%9E%90%EB%B0%94-%EC%8A%A4%ED%94%84%EB%A7%81-%ED%85%8C%EC%8A%A4%ED%8A%B8-%EA%B0%9C%EB%B0%9C%EC%9E%90-%EC%98%A4%EB%8B%B5%EB%85%B8%ED%8A%B8/dashboard)
