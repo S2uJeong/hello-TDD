@@ -1,4 +1,4 @@
-package chap07;
+package tddBook.chap07;
 
 public class AutoDebitInfoRepository {
     public AutoDebitInfo findOne(String userId) {

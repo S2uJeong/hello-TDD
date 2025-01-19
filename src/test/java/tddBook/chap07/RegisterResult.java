@@ -1,4 +1,4 @@
-package chap07;
+package tddBook.chap07;
 
 public class RegisterResult {
     private CardValidity validity;
