@@ -31,6 +31,10 @@ test {
    ```
 - /chap05
   - 테스트 라이프 사이클에 대해 알아본다.
- 
+  - 
+- test/java/chap07/
+    - 테스트 대역에 대해 알아본다. 
+
 ## 2. 테스트 코드 강의 
 - [강의 출처](https://www.inflearn.com/course/%EC%9E%90%EB%B0%94-%EC%8A%A4%ED%94%84%EB%A7%81-%ED%85%8C%EC%8A%A4%ED%8A%B8-%EA%B0%9C%EB%B0%9C%EC%9E%90-%EC%98%A4%EB%8B%B5%EB%85%B8%ED%8A%B8/dashboard)
+
